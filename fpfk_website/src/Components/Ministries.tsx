@@ -6,15 +6,12 @@ const Ministries = () => {
   return (
     <div className="bg-gradient-to-r from-blue-500 via-sky-400 to-blue-600 text-white min-h-screen py-12 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Header Section */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-extrabold mb-4">Our Ministries</h1>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed">
             Join us as we serve God and our community through various ministries. We offer activities and opportunities to grow spiritually, build connections, and make a meaningful impact.
           </p>
         </div>
-
-        {/* Weekly Activities Section */}
         <div className="bg-white text-gray-800 rounded-xl shadow-2xl p-10 mb-16">
           <h2 className="text-3xl font-semibold mb-8 text-center">Weekly Activities</h2>
           <ul className="space-y-6">
@@ -38,11 +35,7 @@ const Ministries = () => {
               <span className="font-bold text-lg mr-4">Wednesday:</span>
               <p>Midweek Service</p>
             </li>
-            {/* <li className="flex items-center">
-              <FaHandsHelping className="text-blue-500 text-2xl mr-4" />
-              <span className="font-bold text-lg mr-4">Thursday:</span>
-              <p>Youth Empowerment</p>
-            </li> */}
+          
              <li className="flex items-center">
               <FaHeart className="text-blue-500 text-2xl mr-4" />
               <span className="font-bold text-lg mr-4">Saturday:</span>
@@ -62,7 +55,7 @@ const Ministries = () => {
           </ul>
         </div>
 
-        {/* Call to Action Section */}
+       
         <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-sky-400 text-white rounded-xl shadow-lg p-12 text-center">
           <h2 className="text-4xl font-bold mb-6">Get Involved</h2>
           <p className="text-lg mb-8">

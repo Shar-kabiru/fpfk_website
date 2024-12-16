@@ -17,7 +17,7 @@ const Home = () => {
         </button>
       </header>
 
-      {/* Image Gallery Section */}
+      
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center justify-center mb-12">
         <img 
           src={Logo} 
@@ -41,7 +41,7 @@ const Home = () => {
         />
       </section>
 
-      {/* About Us Section */}
+      
       <section className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-6">About Us</h2>
         <p className="text-lg max-w-3xl mx-auto leading-relaxed">
