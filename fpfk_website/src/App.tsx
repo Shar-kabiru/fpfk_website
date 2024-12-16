@@ -1,18 +1,45 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import './App.css'
 
-import Login from "./component/Login";
-import Register from "./component/Register";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-const App = () => {
+import About from './Components/About'
+import Home from './Components/Home'
+import Ministries from './Components/Ministries'
+import NavBar from './Components/NavBar'
+import Blogs from './Components/Blogs'
+import Footer from './Components/Footer'
+
+
+function App() {
+
+
   return (
     <Router>
+     <NavBar/>
       <Routes>
-        <Route path="/" element={<Navigate to="/login" />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+      <Route path='/' element={<Home />} />
+        <Route path='/home' element={<Home />} />
       </Routes>
-    </Router>
-  );
-};
+      <Routes>
+        <Route path='/about' element={<About />} />
+      </Routes>
+      <Routes>
+        <Route path='/ministries' element={<Ministries />} />
+      </Routes>
+      <Routes>
+      <Route path='/blogs' element={<Blogs />} />
+      </Routes>
+      <Routes>
+       
+      </Routes>
+      <Footer />
+   </Router>
+        
+  )
+}
 
-export default App;
+export default App
+
+
+
+
