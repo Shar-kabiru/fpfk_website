@@ -1,70 +1,151 @@
-
-  
-import { FaChurch, FaPray, FaUsers, FaHandsHelping, FaMusic, FaHeart, FaHome } from 'react-icons/fa';
+import { FaChurch, FaPray, FaUsers, FaHandsHelping, FaMusic, FaHeart, FaBible, FaChild } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const Ministries = () => {
-  return (
-    <div className="bg-gradient-to-r from-blue-500 via-sky-400 to-blue-600 text-white min-h-screen py-12 px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl font-extrabold mb-4">Our Ministries</h1>
-          <p className="text-xl max-w-3xl mx-auto leading-relaxed">
-            Join us as we serve God and our community through various ministries. We offer activities and opportunities to grow spiritually, build connections, and make a meaningful impact.
-          </p>
-        </div>
-        <div className="bg-white text-gray-800 rounded-xl shadow-2xl p-10 mb-16">
-          <h2 className="text-3xl font-semibold mb-8 text-center">Weekly Activities</h2>
-          <ul className="space-y-6">
-            <li className="flex items-center">
-              <FaChurch className="text-blue-500 text-2xl mr-4" />
-              <span className="font-bold text-lg mr-4">Sunday:</span>
-              <p>Main service from 10:30 AM - 2:00 PM</p>
-            </li>
-            <li className="flex items-center">
-              <FaPray className="text-blue-500 text-2xl mr-4" />
-              <span className="font-bold text-lg mr-4">Monday:</span>
-              <p>Prayer and Counseling</p>
-            </li>
-            <li className="flex items-center">
-              <FaHome className="text-blue-500 text-2xl mr-4" />
-              <span className="font-bold text-lg mr-4">Tuesday:</span>
-              <p>Home Fellowships</p>
-            </li>
-            <li className="flex items-center">
-              <FaUsers className="text-blue-500 text-2xl mr-4" />
-              <span className="font-bold text-lg mr-4">Wednesday:</span>
-              <p>Midweek Service</p>
-            </li>
-          
-             <li className="flex items-center">
-              <FaHeart className="text-blue-500 text-2xl mr-4" />
-              <span className="font-bold text-lg mr-4">Saturday:</span>
-              <p>Community Outreach</p>
-            </li>
-            <li className="flex items-center">
-              <FaMusic className="text-blue-500 text-2xl mr-4" />
-              <span className="font-bold text-lg mr-4">Friday:</span>
-              <p>Worship Night</p>
-            </li>
-           
-            <li className="flex items-center">
-              <FaHandsHelping className="text-blue-500 text-2xl mr-4" />
-              <span className="font-bold text-lg mr-4">Saturday:</span>
-              <p>Youth Empowerment and Bible Study</p>
-            </li>
-          </ul>
-        </div>
+  const ministries = [
+    {
+      name: "Sunday Worship",
+      description: "Our main worship service featuring powerful preaching and vibrant praise.",
+      icon: <FaChurch className="text-blue-600 text-4xl" />,
+      meeting: "Sundays at 10:30 AM"
+    },
+    {
+      name: "Youth Ministry",
+      description: "Engaging programs for teens and young adults to grow in faith and fellowship.",
+      icon: <FaUsers className="text-blue-600 text-4xl" />,
+      meeting: "Fridays at 5:30 PM"
+    },
+    {
+      name: "Women's Fellowship",
+      description: "A supportive community for women of all ages to connect and grow spiritually.",
+      icon: <FaHeart className="text-blue-600 text-4xl" />,
+      meeting: "2nd Saturday at 2:00 PM"
+    },
+    {
+      name: "Men's Fellowship",
+      description: "Building godly men through Bible study, accountability, and service.",
+      icon: <FaUsers className="text-blue-600 text-4xl" />,
+      meeting: "1st Saturday at 9:00 AM"
+    },
+    {
+      name: "Children's Ministry",
+      description: "Fun, age-appropriate Bible teaching for kids from toddlers to pre-teens.",
+      icon: <FaChild className="text-blue-600 text-4xl" />,
+      meeting: "Sundays at 10:30 AM"
+    },
+    {
+      name: "Prayer Ministry",
+      description: "Dedicated times of corporate prayer for the church and community needs.",
+      icon: <FaPray className="text-blue-600 text-4xl" />,
+      meeting: "Mondays at 5:30 PM"
+    },
+    {
+      name: "Bible Study",
+      description: "In-depth exploration of Scripture for spiritual growth and understanding.",
+      icon: <FaBible className="text-blue-600 text-4xl" />,
+      meeting: "Wednesdays at 5:30 PM"
+    },
+    {
+      name: "Worship Team",
+      description: "Leading the congregation in authentic worship through music and arts.",
+      icon: <FaMusic className="text-blue-600 text-4xl" />,
+      meeting: "Thursdays at 4:30 PM"
+    },
+    {
+      name: "Community Outreach",
+      description: "Serving our local community through practical acts of love and compassion.",
+      icon: <FaHandsHelping className="text-blue-600 text-4xl" />,
+      meeting: "Monthly Saturdays"
+    }
+  ];
 
-       
-        <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-sky-400 text-white rounded-xl shadow-lg p-12 text-center">
-          <h2 className="text-4xl font-bold mb-6">Get Involved</h2>
-          <p className="text-lg mb-8">
-            Discover the joy of serving in our ministries. Whether you’re passionate about worship, community outreach, or youth empowerment, there’s a place for you here.
-          </p>
-          <button className="bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105">
-            Join a Ministry
-          </button>
-        </div>
+  const weeklySchedule = [
+    {
+      day: "Sunday",
+      activities: [
+        { time: "8:00 AM", event: "Morning Prayer" },
+        { time: "10:30 AM", event: "Main Service" },
+        { time: "2:00 PM", event: "Fellowship Lunch (1st Sunday)" }
+      ]
+    },
+    {
+      day: "Monday",
+      activities: [
+        { time: "5:30 PM", event: "Prayer and Counseling" }
+      ]
+    },
+    {
+      day: "Tuesday",
+      activities: [
+        { time: "4:00 PM", event: "Home Fellowships" }
+      ]
+    },
+    {
+      day: "Wednesday",
+      activities: [
+        { time: "5:30 PM", event: "Bible Study" }
+      ]
+    },
+    {
+      day: "Thursday",
+      activities: [
+        { time: "4:30 PM", event: "Worship Team Practice" }
+      ]
+    },
+    {
+      day: "Friday",
+      activities: [
+        { time: "5:30 PM", event: "Youth Night (1st Friday)" }
+      ]
+    },
+    {
+      day: "Saturday",
+      activities: [
+        { time: "9:00 AM", event: "Men's Fellowship (1st Saturday)" },
+        { time: "2:00 PM", event: "Women's Fellowship (2nd Saturday)" },
+        { time: "4:00 PM", event: "Community Outreach (Last Saturday)" }
+      ]
+    }
+  ];
+
+  return (
+    <div className="p-6 max-w-6xl mx-auto">
+      <h1 className="text-3xl font-bold text-center text-blue-700 mb-8">Our Ministries</h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {ministries.map((ministry, index) => (
+          <div key={index} className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300">
+            <div className="flex items-center mb-4">
+              {ministry.icon}
+              <h2 className="ml-4 text-xl font-semibold text-gray-800">{ministry.name}</h2>
+            </div>
+            <p className="text-gray-600 mb-2">{ministry.description}</p>
+            <p className="text-sm text-gray-500 font-medium">{ministry.meeting}</p>
+          </div>
+        ))}
+      </div>
+
+      <h2 className="text-2xl font-bold text-blue-700 mt-12 mb-6 text-center">Weekly Schedule</h2>
+      
+      <div className="space-y-6">
+        {weeklySchedule.map((daySchedule, index) => (
+          <div key={index} className="bg-gray-100 p-4 rounded-xl shadow-sm">
+            <h3 className="text-xl font-semibold text-gray-700 mb-2">{daySchedule.day}</h3>
+            <ul className="list-disc list-inside space-y-1">
+              {daySchedule.activities.map((activity, i) => (
+                <li key={i}>
+                  <span className="font-medium text-gray-800">{activity.time}</span> – <span className="text-gray-700">{activity.event}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-10 text-center">
+        <Link to="/" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-full shadow hover:bg-blue-700 transition duration-200">
+          Back to Home
+        </Link>
       </div>
     </div>
   );
