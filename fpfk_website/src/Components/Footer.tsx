@@ -24,8 +24,8 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>Email: info@fpfk.org</li>
-              <li>Phone: +254 712 345 678</li>
+              <li>Email: fpfk@gmail.com</li>
+              <li>Phone: +254 720 952 345</li>
               <li>Address: Kawangware, Nairobi</li>
             </ul>
           </div>
@@ -33,7 +33,11 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
 
 <div className="flex space-x-4">
-  <a href="#" className="text-[#1877F2] hover:opacity-80 transition">
+  <a href="https://www.facebook.com/profile.php?id=100064876622861"
+   className="text-[#1877F2] hover:opacity-80 transition"
+   target="_blank"
+   rel="noopener noreferrer"
+   >
     <FontAwesomeIcon icon={faFacebook} size="lg" />
   </a>
   <a href="#" className="text-[#1DA1F2] hover:opacity-80 transition">
@@ -42,10 +46,17 @@ const Footer = () => {
   <a href="#" className="text-[#C13584] hover:opacity-80 transition">
     <FontAwesomeIcon icon={faInstagram} size="lg" />
   </a>
-  <a href="#" className="text-[#FF0000] hover:opacity-80 transition">
-    <FontAwesomeIcon icon={faYoutube} size="lg" />
-  </a>
+  <a
+  href="https://www.youtube.com/@fpfkkawangwarechurch3665"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-[#FF0000] hover:opacity-80 transition"
+>
+  <FontAwesomeIcon icon={faYoutube} size="lg" />
+</a>
+
 </div>
+
 
 
 

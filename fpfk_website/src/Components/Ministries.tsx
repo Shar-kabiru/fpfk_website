@@ -13,7 +13,7 @@ const Ministries = () => {
       name: "Youth Ministry",
       description: "Engaging programs for teens and young adults to grow in faith and fellowship.",
       icon: <FaUsers className="text-blue-600 text-4xl" />,
-      meeting: "Fridays at 5:30 PM"
+      meeting: "Saturday at 6:00 PM"
     },
     {
       name: "Women's Fellowship",
@@ -37,19 +37,19 @@ const Ministries = () => {
       name: "Prayer Ministry",
       description: "Dedicated times of corporate prayer for the church and community needs.",
       icon: <FaPray className="text-blue-600 text-4xl" />,
-      meeting: "Mondays at 5:30 PM"
+      meeting: "Daily from 6:30 AM"
     },
     {
       name: "Bible Study",
       description: "In-depth exploration of Scripture for spiritual growth and understanding.",
       icon: <FaBible className="text-blue-600 text-4xl" />,
-      meeting: "Wednesdays at 5:30 PM"
+      meeting: "Thursdays at 6:00 PM"
     },
     {
       name: "Worship Team",
       description: "Leading the congregation in authentic worship through music and arts.",
       icon: <FaMusic className="text-blue-600 text-4xl" />,
-      meeting: "Thursdays at 4:30 PM"
+      meeting: "Saturdays at 6:00 PM"
     },
     {
       name: "Community Outreach",
@@ -65,7 +65,7 @@ const Ministries = () => {
       activities: [
         { time: "8:00 AM", event: "Morning Prayer" },
         { time: "10:30 AM", event: "Main Service" },
-        { time: "2:00 PM", event: "Fellowship Lunch (1st Sunday)" }
+        { time: "2:00 PM", event: "Leaders Meetings" }
       ]
     },
     {
@@ -77,7 +77,7 @@ const Ministries = () => {
     {
       day: "Tuesday",
       activities: [
-        { time: "4:00 PM", event: "Home Fellowships" }
+        { time: "6:00 PM", event: "Home Fellowships" }
       ]
     },
     {
@@ -89,21 +89,21 @@ const Ministries = () => {
     {
       day: "Thursday",
       activities: [
-        { time: "4:30 PM", event: "Worship Team Practice" }
+        { time: "6:00 PM", event: "Bible Study" }
       ]
     },
     {
       day: "Friday",
       activities: [
-        { time: "5:30 PM", event: "Youth Night (1st Friday)" }
+        { time: "10:30 PM", event: "Kesha (1st Friday)" }
       ]
     },
     {
       day: "Saturday",
       activities: [
-        { time: "9:00 AM", event: "Men's Fellowship (1st Saturday)" },
-        { time: "2:00 PM", event: "Women's Fellowship (2nd Saturday)" },
-        { time: "4:00 PM", event: "Community Outreach (Last Saturday)" }
+        { time: "9:00 AM", event: "Compassion Meet-up" },
+        { time: "2:00 PM", event: "Praise and Worship Practices" },
+        { time: "6:00 PM", event: "Youth Bible Study" }
       ]
     }
   ];

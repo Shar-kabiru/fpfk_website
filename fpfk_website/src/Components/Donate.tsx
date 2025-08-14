@@ -1,5 +1,6 @@
 import { FaDonate, FaHandHoldingHeart, FaPray, FaChurch } from 'react-icons/fa';
 
+
 const Donate = () => {
   const givingOptions = [
     {
@@ -65,6 +66,8 @@ const Donate = () => {
         {/* Giving Options */}
         <div className="mb-16">
           <h2 className="text-2xl font-bold mb-8 text-center">Ways to Give</h2>
+        
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {givingOptions.map((option, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-center">
@@ -77,6 +80,7 @@ const Donate = () => {
             ))}
           </div>
         </div>
+ 
 
         {/* Payment Methods */}
         <div className="mb-16">
